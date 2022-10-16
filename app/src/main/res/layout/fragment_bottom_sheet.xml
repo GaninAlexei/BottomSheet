@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="32dp">
+
+    <View
+        android:id="@+id/bottom_purchase_marker"
+        android:layout_width="24dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_purchase_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bottom_purchase_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="5dp"
+                    android:text="Оплата" />
+
+                <ImageView
+                    android:id="@+id/bottom_purchase_close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_content"
+                    android:visibility="gone"
+                    app:tint="@color/black"
+                    tools:visibility="visible" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Сумма"
+                            android:textColor="@color/black" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/bottom_purchase_total_sum_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:text="1 246.45 ₽" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="сумма"
+                            android:textColor="@color/black" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/bottom_purchase_payment_by_points_sum_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:text="100 Б" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Сумма"
+                            android:textColor="@color/black" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/bottom_purchase_total_payable_sum_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="16dp"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:text="1 146.45 ₽" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/bottom_purchase_card_loyalty_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Сумма"
+                            android:textColor="@color/black" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/bottom_purchase_card_loyalty_link_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="16dp"
+                            android:textSize="17sp"
+                            android:text="Статус карты" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/bottom_purchase_payment_by_points_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/bottom_purchase_your_balance_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:layout_marginTop="26dp"
+                                android:layout_marginStart="16dp"
+                                android:textColor="@color/black"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:text="Ваш баланс 721 Б" />
+
+                            <TextView
+                                android:id="@+id/bottom_purchase_reset_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Сбросить"
+                                android:layout_marginEnd="16dp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/bottom_purchase_your_balance_TV"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bottom_purchase_letter_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="16dp"
+                                android:text="сумма"
+                                android:textColor="@color/black"
+                                android:textSize="17sp"
+                                app:layout_constraintTop_toBottomOf="@+id/bottom_purchase_reset_TV"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <FrameLayout
+                                android:id="@+id/bottom_purchase_points_frame"
+                                android:layout_width="53dp"
+                                android:layout_height="36dp"
+                                android:layout_marginEnd="6dp"
+                                app:cardCornerRadius="4dp"
+                                android:background="@drawable/input_frame"
+                                app:layout_constraintBottom_toBottomOf="@+id/bottom_purchase_letter_TV"
+                                app:layout_constraintEnd_toStartOf="@id/bottom_purchase_letter_TV"
+                                app:layout_constraintTop_toTopOf="@+id/bottom_purchase_letter_TV">
+
+                                <EditText
+                                    android:id="@+id/bottom_purchase_points_ET"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:paddingEnd="10dp"
+                                    android:layout_gravity="center"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="number"
+                                    android:digits="0123456789"
+                                    android:background="@null"
+                                    android:textSize="17sp"
+                                    android:singleLine="true"
+                                    android:textCursorDrawable="@drawable/payment_by_points_cursor"
+                                    android:textColor="@color/black"/>
+
+                            </FrameLayout>
+
+                            <SeekBar
+                                android:id="@+id/bottom_purchase_points_slider"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginStart="8dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/seekbar_thumb"
+                                app:layout_constraintBottom_toBottomOf="@+id/bottom_purchase_points_frame"
+                                app:layout_constraintEnd_toStartOf="@id/bottom_purchase_points_frame"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/bottom_purchase_points_frame" />
+
+                            <TextView
+                                android:id="@+id/bottom_purchase_available_for_use_TV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="16dp"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/bottom_purchase_points_slider"
+                                android:text="Доступно к списанию 721 Б"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bottom_purchase_enabled_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/bottom_purchase_pay_by_credit_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="32dp"
+                            android:text="rrrr"
+                            android:paddingRight="32dp"
+                            android:paddingTop="16dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
